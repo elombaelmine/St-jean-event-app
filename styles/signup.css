@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --navy-blue: #001F3F;    /* Deep Royal Navy */
+    --royal-gold: #D4AF37;   /* Metallic Gold */
+    --soft-gold-bg: #fffcf2; /* Very light gold tint */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Gradient from white to soft gold tint */
+    background: linear-gradient(180deg, #ffffff 0%, var(--soft-gold-bg) 100%);
+}
+
+/* --- Navigation --- */
+nav {
+    background-color: var(--navy-blue);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid var(--royal-gold);
+}
+
+.header {
+    color: var(--pure-white);
+    font-size: 1.2rem;
+    position: relative;
+    left: 20px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* --- Main Box & Signup Box --- */
+.main-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.signup-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 340px;
+    height: auto;
+    padding: 30px;
+    background: #ffffff;
+    /* Navy border for a high-end feel */
+    border: 1px solid var(--navy-blue);
+    border-radius: 35px; 
+    box-shadow: 0px 10px 25px rgba(0, 31, 63, 0.1);
+}
+
+.signup-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.signup-header h1 {
+    color: var(--navy-blue);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* --- Input Fields --- */
+.signup-box .input-field {
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    border-radius: 30px; 
+    border: 1px solid var(--navy-blue);
+    background: #ffffff;
+    color: var(--navy-blue);
+    outline: none;
+    transition: all .3s ease;
+}
+
+::placeholder {
+    font-weight: 400;
+    color: #888;
+}
+
+/* Logic: Pop effect and GOLD border on focus */
+.input-field:focus {
+    width: 103%; 
+    border-color: var(--royal-gold);
+    box-shadow: 0px 0px 10px rgba(212, 175, 55, 0.3);
+}
+
+/* --- Button & Label Logic --- */
+.input-submit {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.submit-btn {
+    width: 100%;
+    height: 50px;
+    background: var(--navy-blue);
+    border: 2px solid var(--navy-blue);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.input-submit label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    pointer-events: none; 
+}
+
+/* Hover Effect: Changes to Gold */
+.submit-btn:hover {
+    background: var(--royal-gold);
+    border-color: var(--royal-gold);
+    transform: scale(1.02);
+}
+
+/* Label color change to Navy on Gold hover */
+.input-submit:hover label {
+    color: var(--navy-blue);
+}
+
+/* --- Footer Links --- */
+.sign-up-link {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 20px;
+    color: #555;
+}
+
+.sign-up-link a {
+    color: var(--navy-blue);
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.sign-up-link a:hover {
+    color: var(--royal-gold);
+    text-decoration: underline;
+}

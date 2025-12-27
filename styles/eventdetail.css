@@ -1,0 +1,127 @@
+/* --- Event Detail Page Styling --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+:root {
+    --navy: #001F3F;
+    --gold: #D4AF37;
+    --off-white: #fffcf2;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+/* Navigation & Premium Button */
+nav {
+    background: var(--navy);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+#logoutBtn {
+    background: var(--gold);
+    color: var(--navy);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px; /* Pill shape */
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+#logoutBtn:hover {
+    background: white;
+    transform: scale(1.05);
+}
+
+/* Main Content Card */
+.body-div {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.Creat-event {
+    background: white;
+    width: 100%;
+    max-width: 700px;
+    border: 1px solid var(--navy);
+    border-radius: 40px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.box-title {
+    text-align: center;
+    color: var(--navy);
+    letter-spacing: 2px;
+    border-bottom: 2px solid var(--gold);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+/* Meta Data Pills */
+.event-meta {
+    display: flex;
+    justify-content: space-around;
+    background: var(--off-white);
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(0,31,63,0.1);
+}
+
+.event-meta p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--navy);
+}
+
+.event-meta strong {
+    color: var(--gold);
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+/* Attendee List */
+.attendee-section {
+    margin-top: 40px;
+}
+
+.attendee-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background: #fff;
+    border: 1px solid var(--navy);
+    border-radius: 30px; /* Pill shape */
+    margin-bottom: 10px;
+    transition: 0.2s;
+}
+
+.attendee-item:hover {
+    border-color: var(--gold);
+}
+
+.student-name {
+    font-weight: 600;
+    color: var(--navy);
+}
+
+.reg-label {
+    font-size: 11px;
+    color: var(--gold);
+    font-weight: bold;
+}
+
+.no-data {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+}

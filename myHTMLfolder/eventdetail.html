@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/eventdetail.css">
+    <title>Event Details | Admin</title>
+</head>
+<body>
+    <nav>
+        <div class="header-name">Saint Jean Admin</div>
+        <a href="admin.html"><button id="logoutBtn">Back to Dashboard</button></a>
+    </nav>
+
+    <div class="body-div">
+    <div class="Creat-event">
+        <h2 id="detail-title" class="box-title">EVENT NAME</h2>
+        
+        <div class="event-meta">
+            <p><strong>Date</strong> <span id="detail-date">--</span></p>
+            <p><strong>Category</strong> <span id="detail-category">--</span></p>
+            <p><strong>Attendance</strong> <span id="detail-count">0</span> / <span id="detail-max">0</span></p>
+        </div>
+
+        <div class="attendee-section">
+            <h3 style="color: var(--navy); text-align: center; font-size: 12px; letter-spacing: 1px; margin-bottom: 20px;">
+                REGISTERED STUDENTS
+            </h3>
+            <ul id="attendee-list">
+                </ul>
+        </div>
+    </div>
+</div>
+    <script type="module" src="../dist/eventdetail.js"></script>
+</body>
+</html>

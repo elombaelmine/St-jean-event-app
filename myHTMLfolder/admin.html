@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/admin.css">
+    <title>Admin Dashboard | Saint Jean Events</title>
+</head>
+<body>
+    <nav>
+        <div><h2 class="header-name">Saint Jean Admin</h2></div>
+        <div class="selection-top">
+           <a href="../myHTMLfolder/login.html"><button id="logoutBtn" type="button">Logout</button></a> 
+        </div>
+    </nav>
+
+    <div class="body-div">
+        <div class="Creat-event">
+            <p class="box-title">Create New Event</p>
+            <div class="box-form">
+                <label for="event-title">Event Title</label>
+                <input type="text" id="event-title" placeholder="e.g. Robotics Workshop">
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <label for="event-date">Date</label>
+                        <input type="date" id="event-date">
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <label for="event-category">Category</label>
+                        <select id="event-category">
+                            <option value="Conference">Conference</option>
+                            <option value="Sport">Sport</option>
+                            <option value="Workshop">Workshop</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <label for="event-desc">Description</label>
+                <input type="text" id="event-desc" placeholder="Brief description of the event">
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <label for="event-location">Location</label>
+                        <input type="text" id="event-location" placeholder="e.g. Hall A">
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <label for="event-capacity">Max Capacity</label>
+                        <input type="number" id="event-capacity" value="50">
+                    </div>
+                </div>
+
+                <label for="event-image">Image URL (Optional)</label>
+                <input type="text" id="event-image" placeholder="https://...">
+
+                <button id="createEventBtn" class="login-submit-btn">Publish Event</button>
+            </div>
+        </div>
+        
+        <div id="admin-events-list">
+            <h3>Managed Events</h3>
+            <div id="events-container">
+                </div>
+        </div>
+    </div>
+    <script type="module" src="../dist/admin.js"></script>
+</body>
+</html>

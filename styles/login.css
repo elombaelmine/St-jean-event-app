@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --navy-blue: #001F3F;    /* Deep Royal Navy */
+    --royal-gold: #D4AF37;   /* Metallic Gold */
+    --soft-gold-bg: #fffcf2; /* Very light gold tint for background */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Gradient background for a modern, royal touch */
+    background: linear-gradient(180deg, #ffffff 0%, var(--soft-gold-bg) 100%);
+}
+
+/* --- Navigation --- */
+nav {
+    background-color: var(--navy-blue);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 2px solid var(--royal-gold);
+}
+
+.header {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* --- Main Layout --- */
+.main-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 380px;
+    height: auto;
+    padding: 35px;
+    background: #ffffff;
+    border: 1px solid var(--navy-blue); 
+    border-radius: 35px; /* Highly curved borders */
+    box-shadow: 0px 10px 25px rgba(0, 31, 63, 0.1);
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-header h1 {
+    color: var(--navy-blue);
+    font-size: 26px;
+    font-weight: 600;
+}
+
+/* --- Inputs --- */
+.input-box .input-field {
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    padding: 0 25px;
+    margin-bottom: 15px;
+    border-radius: 30px; /* Pill shaped */
+    border: 1px solid var(--navy-blue);
+    background: #ffffff;
+    color: var(--navy-blue);
+    outline: none;
+    transition: all .3s ease;
+}
+
+::placeholder {
+    font-weight: 400;
+    color: #999;
+}
+
+/* Logic: Pop effect and GOLD border/glow */
+.input-field:focus {
+    width: 103%; 
+    border-color: var(--royal-gold);
+    box-shadow: 0px 0px 10px rgba(212, 175, 55, 0.3);
+}
+
+/* --- Submit Button & Absolute Label Logic --- */
+.input-submit {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.submit-btn {
+    width: 100%;
+    height: 50px;
+    background: var(--navy-blue);
+    border: 2px solid var(--navy-blue);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+/* Logic: Centered Label */
+.input-submit label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    pointer-events: none;
+}
+
+/* Hover Effect: Switch to Gold */
+.submit-btn:hover {
+    background: var(--royal-gold);
+    border-color: var(--royal-gold);
+    transform: scale(1.03, 1);
+}
+
+/* Label color change to navy on gold hover */
+.input-submit:hover label {
+    color: var(--navy-blue);
+}
+
+/* --- Links --- */
+.sign-up-link, .back-to-welcome {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+    color: #666;
+}
+
+.sign-up-link a, .back-to-welcome a {
+    color: var(--navy-blue);
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sign-up-link a:hover, .back-to-welcome a:hover {
+    color: var(--royal-gold);
+    text-decoration: underline;
+}

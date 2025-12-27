@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/student.css">
+    <title>Student Schedule | Saint Jean</title>
+</head>
+<body>
+    <nav>
+        <div><h2 class="header-name">Saint Jean Student</h2></div>
+        <div class="selection-top">
+           <a href="../myHTMLfolder/login.html"><button id="logoutBtn" type="button">Logout</button></a> 
+        </div>
+    </nav>
+
+    <div class="body-div">
+        <div class="heading-div">
+           <h1 class="heading">Events Schedule</h1>
+        </div>
+        <div class="line-div">
+            <p>Discover workshops, sports, conferences and all campus activities in one place.</p>
+        </div>
+
+        <div class="box-div">
+            <input type="text" class="Search-field" placeholder="Search events..." autocomplete="off">
+
+             <select id="filter-Category">
+                <option value="ALL">All Categories</option>
+                <option value="Conference">Conference</option>
+                <option value="Sport">Sport</option>
+                <option value="Workshop">Workshop</option>
+                <option value="Other">Other</option>
+             </select>
+
+              <select id="filter-status">
+                <option value="ALL">All Dates</option>
+                <option value="Upcoming">Upcoming</option>
+                <option value="Past">Past</option>
+              </select>
+        </div>
+
+        <div id="student-events-container" class="events-grid">
+            </div>
+    </div>
+    <script type="module" src="../dist/student.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "event-app",
+  "version": "1.0.0",
+  "description": "Event Management SJ",
+  "scripts": {
+    "build": "tsc",
+    "Elmine": "concurrently \"tsc --watch\" \"npx live-server --open=myHTMLfolder/welcome.html\""
+  },
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "author": "",
+  "license": "ISC"
+}

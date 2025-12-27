@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/signup.css">
+    <title>Signup | Saint Jean Events</title>
+</head>
+<body>
+    <nav>
+        <h2 class="header">Saint Jean Events</h2>
+    </nav>
+
+    <div class="main-box">
+        <div class="signup-box">
+            <header class="signup-header">
+                <h1>Sign Up</h1>
+            </header>
+
+            <input type="text" id="fullname" class="input-field" placeholder="Full name" autocomplete="on" required>
+            
+            <input type="email" id="email" class="input-field" placeholder="Email" autocomplete="on" required>
+            
+            <input type="text" id="username" class="input-field" placeholder="Username" autocomplete="on" required>
+            
+            <input type="password" id="password" class="input-field" placeholder="Password" autocomplete="on" required>
+
+            <div class="input-submit">
+                <button type="submit" class="submit-btn" id="submitsign-up"></button>
+                <label for="submitsign-up">Sign Up</label>
+            </div>
+
+            <div class="sign-up-link">
+                <p>Already have an account? <a href="login.html">Login</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="../dist/signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --navy-blue: #001F3F;    /* Deep Royal Navy */
+    --royal-gold: #D4AF37;   /* Metallic Gold */
+    --pure-white: #ffffff;
+    --soft-gold-bg: #fffcf2; /* Very light gold tint */
+    --danger-red: #c0392b;   /* Slightly deeper red to match Navy/Gold */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--pure-white);
+    color: var(--navy-blue);
+}
+
+/* --- Navigation --- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: white;
+    border-bottom: 2px solid var(--navy-blue);
+}
+
+.header-name { 
+    font-weight: 600; 
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    color: var(--navy-blue);
+}
+
+#logoutBtn {
+    padding: 8px 20px;
+    border: 1px solid var(--navy-blue);
+    background: transparent;
+    color: var(--navy-blue);
+    border-radius: 25px; 
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+#logoutBtn:hover { 
+    background: var(--navy-blue); 
+    color: white; 
+}
+
+/* --- Layout --- */
+.body-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 5%;
+    background: linear-gradient(180deg, var(--pure-white) 0%, var(--soft-gold-bg) 100%);
+    min-height: 100vh;
+    gap: 50px;
+}
+
+/* --- Create Event Box (Curved & Premium) --- */
+.Creat-event {
+    background: white;
+    padding: 40px;
+    border-radius: 40px; 
+    border: 1px solid var(--navy-blue);
+    width: 100%;
+    max-width: 650px;
+    box-shadow: 0px 10px 30px rgba(0, 31, 63, 0.1);
+}
+
+.box-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--navy-blue);
+    margin-bottom: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.box-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #444;
+    margin-left: 15px; 
+    text-transform: uppercase;
+}
+
+/* Pill Shaped Inputs */
+input, select {
+    padding: 12px 20px;
+    border: 1px solid var(--navy-blue);
+    border-radius: 30px; 
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+    color: var(--navy-blue);
+}
+
+input:focus, select:focus { 
+    border-color: var(--royal-gold); 
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+}
+
+/* Publish Button */
+.login-submit-btn {
+    background: var(--navy-blue);
+    color: white;
+    padding: 15px;
+    border: 2px solid var(--navy-blue);
+    border-radius: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.login-submit-btn:hover { 
+    background: var(--royal-gold); 
+    color: var(--navy-blue);
+    border-color: var(--royal-gold);
+}
+
+/* --- Managed Events List --- */
+#admin-events-list {
+    width: 100%;
+}
+
+#admin-events-list h3 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: 22px;
+    color: var(--navy-blue);
+}
+
+#events-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* Event Item Cards */
+.admin-event-item {
+    background: white;
+    padding: 25px;
+    border-radius: 35px;
+    border: 1px solid var(--navy-blue);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: transform 0.3s ease;
+}
+
+.admin-event-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 31, 63, 0.1);
+    border-color: var(--royal-gold);
+}
+
+.admin-event-item h4 { 
+    margin: 0; 
+    color: var(--navy-blue);
+    font-size: 18px; 
+}
+
+.admin-event-item p { 
+    margin: 0; 
+    font-size: 13px; 
+    color: #555; 
+}
+
+/* Delete Button */
+.delete-btn {
+    align-self: center;
+    background: transparent;
+    color: var(--danger-red);
+    border: 1px solid var(--danger-red);
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.delete-btn:hover { 
+    background: var(--danger-red); 
+    color: white; 
+}
