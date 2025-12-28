@@ -38,7 +38,7 @@ Run npm run build to compile my TypeScript code.
 Open welcome.html using Live Server in VS Code to see it in action.
 
 5. How to Use the Application
--To Create an Event: Go to the Admin page. Fill in the boxes (Title, Date, Category). When you hit Publish, the code saves it and sends it to the Student page.
+-To Create an Event: Go to the Admin page(default adminUsername: admin, password:123). Fill in the boxes (Title, Date, Category). When you hit Publish, the code saves it and sends it to the Student page.
 
 -To view event details: Log in as an Admin,On the Dashboard, click anywhere on an Event Card.
 You will be redirected to eventdetails.html where the specific selectedEventId is fetched from localStorage.View the list of registered students and event statistics.
